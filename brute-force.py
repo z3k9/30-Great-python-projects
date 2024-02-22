@@ -24,7 +24,7 @@ def brute_force(word:str, length:int, digits: bool=False, symbols:bool = False)-
     attempts:int = 0
     for guess in itertools.product(chars, repeat=length):
         attempts += 1
-        guess: str   = ''.join(guess)
+        guess:str = ''.join(guess)
         
         if guess == word:
             return f'"{word}" was cracked after {attempts:,} guesses.'
