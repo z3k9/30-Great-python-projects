@@ -24,7 +24,7 @@ def run_bot():
     while True:
         user_input:str = input('You:')
         mood:Mood = get_mood(user_input, sensitivity=0.3)
-        print(f'Bot: {mood.emoji}, {mood.sentiment}')
+        print(f'Bot: {mood.emoji}, ({mood.sentiment})')
         
 if __name__ == "__main__":
     run_bot()
