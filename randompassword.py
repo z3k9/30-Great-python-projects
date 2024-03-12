@@ -35,3 +35,5 @@ if __name__ == '__main__':
         new_pass:str = generate_password(length=2, symbols=True, uppercase=True)
         specs: str = f'U: {contains_upper(new_pass)}, S:{contains_symbols(new_pass)}'
         print(f'{i} -> {new_pass} ({specs})')
+        
+        
